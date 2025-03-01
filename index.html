@@ -8,7 +8,7 @@
   <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.9/daisyui.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body class="bg-cyan-100 pb-10">
+<body class="bg-[rgba(55,82,253,5%)] pb-10">
   <header class="mx-20 pt-4 rounded-md ">
     <!-- navbar -->
     <nav>
@@ -36,20 +36,20 @@
     <section class="bg-white p-4 rounded-md flex-1">
      <div class="flex gap-2">
       <!-- task assigned -->
-      <div class="flex items-center gap-2 bg-slate-200 p-3 rounded-md w-[250px]">
-        <div class="bg-slate-100 p-2 rounded-full"><img class="" src="assets/checkbox.png" alt=""></div>
+      <div class="flex items-center gap-2 bg-[rgba(55,82,253,5%)] p-3 rounded-md w-[250px]">
+        <div class="bg-white p-2 rounded-full"><img class="" src="assets/checkbox.png" alt=""></div>
         <div>
           <p>Task Assigned</p>
           <p class="font-bold text-2xl">06</p>
         </div>
       </div>
       <!-- calender section -->
-       <div class="flex items-center rounded-md p-3 w-[500px] bg-linear-to-r from-[#3752FD] to-blue-300">
+       <div id="discover" class="flex items-center rounded-md p-3 w-[500px] bg-linear-to-r from-[#3752FD] to-blue-300">
         <img src="assets/board.png" alt="">
         <p class="text-white">Discover Something <br> New Today!</p>
        </div>
        <!-- date section -->
-        <div class="bg-slate-200 rounded-md p-3 flex items-center gap-3 w-[250px]">
+        <div class="bg-[rgba(55,82,253,5%)] rounded-md p-3 flex items-center gap-3 w-[250px]">
           <div><img src="assets/calender.png" alt=""></div>
           <div>
             <p>wed,</p>
@@ -60,7 +60,7 @@
      <!-- card container -->
      <div class="mt-4 grid grid-cols-3 gap-4 h-[500px]">
       <!-- card1 -->
-      <div class="bg-slate-200 p-3 flex flex-col gap-2 rounded-sm">
+      <div class="bg-[rgba(55,82,253,5%)] p-3 flex flex-col gap-2 rounded-sm">
         <div class="bg-white rounded-sm p-1 w-24"><p class="text-center">ShopEase</p></div>
         <p>FIx mobile button Issue</p>
         <div class="bg-white rounded-sm p-3 w-75"><p>Debug using Chrome <br> DevTools, check for overlapping.</p></div>
@@ -71,7 +71,7 @@
         </div>
       </div>
        <!-- card2 -->
-       <div class="bg-slate-200 p-3 flex flex-col gap-2 rounded-sm">
+       <div class="bg-[rgba(55,82,253,5%)] p-3 flex flex-col gap-2 rounded-sm">
         <div class="bg-white rounded-sm p-1 w-24"><p class="text-center">cloudsync</p></div>
         <p>Add dark mode</p>
         <div class="bg-white rounded-sm p-3 w-75"><p>Store the user's preference in <br> localStorage update css.</p></div>
@@ -82,7 +82,7 @@
         </div>
       </div>
        <!-- card3 -->
-       <div class="bg-slate-200 p-3 flex flex-col gap-2 rounded-sm">
+       <div class="bg-[rgba(55,82,253,5%)] p-3 flex flex-col gap-2 rounded-sm">
         <div class="bg-white rounded-sm p-1 w-24"><p class="text-center">SwiftPay</p></div>
         <p>Optimize Home page</p>
         <div class="bg-white rounded-sm p-3 w-75"><p>Debug using Chrome <br> DevTools, check for overlapping.</p></div>
@@ -93,7 +93,7 @@
         </div>
       </div>
        <!-- card4 -->
-       <div class="bg-slate-200 p-3 flex flex-col gap-2 rounded-sm">
+       <div class="bg-[rgba(55,82,253,5%)] p-3 flex flex-col gap-2 rounded-sm">
         <div class="bg-white rounded-sm p-1 w-24"><p class="text-center">Meta</p></div>
         <p>Add new emoji 🤲</p>
         <div class="bg-white rounded-sm p-3 w-75"><p>Debug using Chrome <br> DevTools, check for overlapping</p></div>
@@ -104,7 +104,7 @@
         </div>
       </div>
        <!-- card5 -->
-       <div class="bg-slate-200 p-3 flex flex-col gap-2 rounded-sm">
+       <div class="bg-[rgba(55,82,253,5%)] p-3 flex flex-col gap-2 rounded-sm">
         <div class="bg-white rounded-sm p-1 w-24"><p class="text-center">Google LLC</p></div>
         <p>Integrate OpenAI API</p>
         <div class="bg-white rounded-sm p-3 w-75"><p>Debug using Chrome <br> DevTools, check for overlapping</p></div>
@@ -115,7 +115,7 @@
         </div>
       </div>
        <!-- card6 -->
-       <div class="bg-slate-200 p-3 flex flex-col gap-2 rounded-sm">
+       <div class="bg-[rgba(55,82,253,5%)] p-3 flex flex-col gap-2 rounded-sm">
         <div class="bg-white rounded-sm p-1 w-24"><p class="text-center">Glassdoar</p></div>
         <p>Improve Job searching </p>
         <div class="bg-white rounded-sm p-3 w-75"><p>Debug using Chrome <br> DevTools, check for overlapping</p></div>
@@ -139,5 +139,7 @@
            </div>
      </section>
   </main>
+
+  <script src="script/question.js"></script>
 </body>
 </html>
