@@ -8,7 +8,7 @@
   <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.9/daisyui.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body class="bg-[rgba(55,82,253,5%)] pb-10">
+<body id="bg-color" class="bg-[rgba(55,82,253,5%)] pb-10">
   <header class="mx-20 pt-4 rounded-md ">
     <!-- navbar -->
     <nav>
@@ -23,7 +23,7 @@
         <h1 id="checkbox-btn" class="font-bold text-3xl">23</h1>
       </div>
           
-             <button class="rounded-full bg-slate-200 p-3"><img class="" src="assets/theme-btn.png" alt=""></button>
+             <button id="theme-btn" class="rounded-full bg-slate-200 p-3"><img class="" src="assets/theme-btn.png" alt=""></button>
                        
           
         </div>
@@ -52,8 +52,7 @@
         <div class="bg-[rgba(55,82,253,5%)] rounded-md p-3 flex items-center gap-3 w-[250px]">
           <div><img src="assets/calender.png" alt=""></div>
           <div>
-            <p>wed,</p>
-            <p>jul 28 2025</p>
+            <p id="time"></p>
           </div>
         </div>
      </div>
@@ -73,7 +72,7 @@
        <!-- card2 -->
        <div class="bg-[rgba(55,82,253,5%)] p-3 flex flex-col gap-2 rounded-sm">
         <div class="bg-white rounded-sm p-1 w-24"><p class="text-center">cloudsync</p></div>
-        <p>Add dark mode</p>
+        <p id="title">Add dark mode</p>
         <div class="bg-white rounded-sm p-3 w-75"><p>Store the user's preference in <br> localStorage update css.</p></div>
         <div class="flex items-center justify-between">
           <p>Deadline <br>
@@ -135,12 +134,18 @@
               <img src="assets/activity.png" alt="">
               <p>Activity log</p>
             </div>
-            <button class="btn text-white bg-blue-600 mt-4 p-2">Clear history</button>
+            <button id="clearhistory-btn" class="btn text-white bg-blue-600 mt-4 p-2">Clear history</button>
+            <div id="history" class="text-center mb-2">
+              
+             </div>
            </div>
+          
      </section>
   </main>
 
   <script src="script/question.js"></script>
   <script src="script/completebtn.js"></script>
+  <script src="script/datetime.js"></script>
+  <script src="script/randomcolor.js"></script>
 </body>
 </html>
