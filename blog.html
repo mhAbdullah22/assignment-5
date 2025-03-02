@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>blog</title>
-    <!-- daisyui cdn -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.9/daisyui.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <!-- daisyui cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.9/daisyui.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
+
 <body class="bg-[rgba(55,82,253,5%)] pb-6">
   <header class="mx-20 pt-4 rounded-md ">
     <!-- navbar -->
@@ -18,47 +20,54 @@
           <h1 class="text-3xl inline">Dev<span class="font-bold">Board</span></h1>
         </div>
         <button id="back-btn" class="btn bg-blue-600 text-white">Back to Desk</button>
-  
+
       </div>
     </nav>
   </header>
 
-  <main class="mx-20">
+  <main class="mx-20 pb-8">
     <h1 class="font-semibold text-2xl text-center my-3">Blogs</h1>
     <!-- question section -->
-     <section class="flex flex-col gap-3">
+    <section class="flex flex-col gap-3">
       <!-- question1 -->
-       <div class="p-2 bg-white rounded-sm">
-        <h1 class="font-bold pb-2">Question-1:What are the different ways to select an element  in the Dom?</h1>
+      <div class="p-2 bg-white rounded-sm">
+        <h1 class="font-bold pb-2">Question-1:What are the different ways to select an element in the Dom?</h1>
         <hr class="border-dashed border-gray-200">
-        <p class="pt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, molestiae.</p>
-       </div>
-       <!-- question2 -->
-       <div class="p-2 bg-white rounded-sm">
+        <p class="pt-2">Different ways to select an element in dom
+          are-getElementById,getElementsByClassName,getElementsByTagName,querySelector,querySelectorAll.</p>
+      </div>
+      <!-- question2 -->
+      <div class="p-2 bg-white rounded-sm">
         <h1 class="font-bold pb-2">Question-2:What are the difference between InnerHtml,InnerText,and textContent?</h1>
         <hr class="border-dashed border-gray-200">
-        <p class="pt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, molestiae.</p>
-       </div>
-       <!-- question3 -->
-       <div class="p-2 bg-white rounded-sm">
+        <p class="pt-2">innerHtml returns all text with html tags, innerText returns all text of elements and
+          textContents is all text contained by an element and all its children that are for formatting purposes only.
+        </p>
+      </div>
+      <!-- question3 -->
+      <div class="p-2 bg-white rounded-sm">
         <h1 class="font-bold pb-2">Question-3:What is event delegation in the Dom?</h1>
         <hr class="border-dashed border-gray-200">
-        <p class="pt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, molestiae.</p>
-       </div>
-       <!-- question4 -->
-       <div class="p-2 bg-white rounded-sm">
+        <p class="pt-2">Events can be added to a parent element instead of adding to every single element is event
+          delegation.</p>
+      </div>
+      <!-- question4 -->
+      <div class="p-2 bg-white rounded-sm">
         <h1 class="font-bold pb-2">Question-4:What is event bubbling in the Dom?</h1>
         <hr class="border-dashed border-gray-200">
-        <p class="pt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, molestiae.</p>
-       </div>
-              <!-- question5 -->
-              <div class="p-2 bg-white rounded-sm">
-                <h1 class="font-bold pb-2">Question-5:how do you create,add,and remove elements using javaScript?</h1>
-                <hr class="border-dashed border-gray-200">
-                <p class="pt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, molestiae.</p>
-               </div>
-     </section>
+        <p class="pt-2">event bubbling is a type of DOM event propagation where the event first triggers on the
+          innermost target element, and then successively triggers on the parents of the target element in the same
+          nesting hierarchy till it reaches the outermost DOM element </p>
+      </div>
+      <!-- question5 -->
+      <div class="p-2 bg-white rounded-sm">
+        <h1 class="font-bold pb-2">Question-5:how do you create,add,and remove elements using javaScript?</h1>
+        <hr class="border-dashed border-gray-200">
+        <p class="pt-2">1.document.createElement('elementname') <br> 2.parent.appendChild(child) <br>3.parent.removeChild(child)</p>
+      </div>
+    </section>
   </main>
   <script src="script/back.js"></script>
 </body>
+
 </html>

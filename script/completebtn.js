@@ -11,7 +11,7 @@ function showvalue(id,show){
 }
 
 // repeat button function
-function repeat(id){
+function repeat(){
   const assignedValue=getInputByid('task-assigned');
   const result=assignedValue-1;
   showvalue('task-assigned',result);
@@ -19,8 +19,6 @@ function repeat(id){
   const checkbox=getInputByid('checkbox-btn');
   const check=checkbox+1;
   showvalue('checkbox-btn',check);
-
-  document.getElementById(id).disabled=true;
 }
 
 // timeshow function
@@ -28,53 +26,45 @@ function timeShow(){
   const history=document.getElementById('history');
   const p=document.createElement('p');
   p.innerText=`
-  You have completed the task 777 at ${updateTime()}
+  You have completed the task 77    at ${updateTime()}
   `
   history.appendChild(p);
 }
 
-  
+// function message()
+// {
+//   const msg=document.getElementById(id).innerText;
+//   return msg;
+// }
 
-document.getElementById('complete-btn1').addEventListener('click',function(){
-  repeat('complete-btn1');
-  alert('Board updated Successfully');
-  timeShow();
- })
-
- document.getElementById('complete-btn2').addEventListener('click',function(){
-  repeat('complete-btn2');
-  alert('Board updated Successfully');
-  timeShow();  
- 
- })
-
- document.getElementById('complete-btn3').addEventListener('click',function(){
-  repeat('complete-btn3');
-  alert('Board updated Successfully');
-  timeShow();
- })
-
- document.getElementById('complete-btn4').addEventListener('click',function(){
-  repeat('complete-btn4');
-  alert('Board updated Successfully');
-  timeShow();
- })
-
- document.getElementById('complete-btn5').addEventListener('click',function(){
-  repeat('complete-btn5');
-  alert('Board updated Successfully');
-  timeShow();
- })
-
- document.getElementById('complete-btn6').addEventListener('click',function(){
-  repeat('complete-btn6');
-  alert('Board updated Successfully');
-  timeShow();
- })
-
+// // clear history button
  document.getElementById('clearhistory-btn').addEventListener('click',function(){
  document.getElementById('history').style.display='none';
  })
 
+
+const results=document.getElementsByClassName('complete');
+let count=0;
+for(const result of results )
+{
+  result.addEventListener('click',function(){
+  count++;
+ repeat();
+  alert('Board updated Successfully');
+  timeShow();
+  result.disabled=true;
+  if(count===6){
+    alert('congrates!!! You have completed all the current task');
+    
+   }
+
+  })
+}
+
+// const titles=document.getElementsByClassName('title');
+// for(const title of titles)
+// {
+//   const show=title.innerText;
+// }
 
 
