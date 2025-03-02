@@ -26,16 +26,11 @@ function timeShow(){
   const history=document.getElementById('history');
   const p=document.createElement('p');
   p.innerText=`
-  You have completed the task 77    at ${updateTime()}
+  You have completed the task FIx mobile button Issue at ${updateTime()}
   `
   history.appendChild(p);
 }
 
-// function message()
-// {
-//   const msg=document.getElementById(id).innerText;
-//   return msg;
-// }
 
 // // clear history button
  document.getElementById('clearhistory-btn').addEventListener('click',function(){
@@ -61,10 +56,5 @@ for(const result of results )
   })
 }
 
-// const titles=document.getElementsByClassName('title');
-// for(const title of titles)
-// {
-//   const show=title.innerText;
-// }
 
 
